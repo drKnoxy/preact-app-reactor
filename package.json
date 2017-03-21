@@ -19,11 +19,18 @@
   },
   "homepage": "https://github.com/drKnoxy/preact-app-reactor#readme",
   "dependencies": {
+    "firebase": "^3.7.2",
     "preact": "^7.2.0",
-    "react-router": "^4.0.0"
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
     "webpack": "^2.2.1",
     "webpack-merge": "^4.1.0"
   }

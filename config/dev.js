@@ -4,7 +4,7 @@ var baseConfig = require("./base");
 
 module.exports = function(env) {
   return webpackMerge(baseConfig(), {
-    devtool: 'cheap-eval-sourcemaps',
+    devtool: 'cheap-module-source-map', // eval maybe
     plugins: [
     ]
   });
