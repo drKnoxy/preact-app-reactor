@@ -1,0 +1,28 @@
+{
+  "name": "preact-app-reactor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --env=dev",
+    "build": "webpack --env=prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drKnoxy/preact-app-reactor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drKnoxy/preact-app-reactor/issues"
+  },
+  "homepage": "https://github.com/drKnoxy/preact-app-reactor#readme",
+  "dependencies": {
+    "preact": "^7.2.0",
+    "react-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0"
+  }
+}
