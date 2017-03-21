@@ -23,6 +23,8 @@
     "react-router": "^4.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0"
+    "babel-core": "^6.24.0",
+    "webpack": "^2.2.1",
+    "webpack-merge": "^4.1.0"
   }
 }
