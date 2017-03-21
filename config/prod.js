@@ -4,6 +4,7 @@ var baseConfig = require("./base");
 
 module.exports = function(env) {
   return webpackMerge(baseConfig(), {
+    devtool: 'source-map',
     plugins: [
       // Tell things to run in production mode
       new webpack.LoaderOptionsPlugin({

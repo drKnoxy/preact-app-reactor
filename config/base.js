@@ -8,19 +8,22 @@ module.exports = {
     path: path.join(__dirname, "build/static/js")
   },
   plugins: [
-    // this assumes your vendor imports exist in the node_modules directory
+    // Anything in node_modules goes to the vendor chunk
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor",
       minChunks: function(module) {
         return module.context && module.context.indexOf("node_modules") !== -1;
       }
     }),
+    // Adding the manifest helps cache-busting not break on every build...
     new webpack.optimize.CommonsChunkPlugin({
       name: "manifest"
     })
   ],
   module: {
-    rules: []
+    rules: [
+      { test: /\.(js|jsx)$/, loader: "babel-loader", exclude: /node_modules/ }
+    ]
   },
   resolve: {
     alias: {
