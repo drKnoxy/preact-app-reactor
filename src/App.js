@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import Home from 'screens/Home';
+import Home from './screens/Home';
 
 export default function App({ user }) {
   return (

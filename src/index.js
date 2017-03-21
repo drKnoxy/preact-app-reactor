@@ -1,6 +1,7 @@
 import { render } from 'preact';
 import { BrowserRouter as Router } from 'react-router-dom';
-import firebase from 'firebase';
+import { initializeApp } from 'firebase/app';
+// import { initializeApp } from 'firebase';
 
 import Store from './Store';
 import App from './App';
@@ -15,7 +16,7 @@ const config = {
   // messagingSenderId: '',
 };
 
-// firebase.initializeApp(config);
+initializeApp(config);
 
 render(
   <Router>
